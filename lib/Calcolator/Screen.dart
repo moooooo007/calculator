@@ -41,28 +41,28 @@ class _mainscreenState extends State<mainscreen> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Text(
-                        "$finalresult",
+                        "$finalresult",textAlign: TextAlign.center,
                         style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 35,
-                            fontWeight: FontWeight.bold),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,),
                       ),
                       Spacer(),
-                      Container(
+                     Container(
+                        padding: EdgeInsets.all(8),
                         width: double.infinity,
                         height: 3,
                         color: Colors.white,
                       ),
-                      SizedBox(
-                        height: 20,
-                      ),
+
                       Text(
-                        "$result",
+                        "$result",textAlign: TextAlign.center,
                         style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 25,
+                            fontSize: 16,
                             fontWeight: FontWeight.bold),
                       ),
                     ],
